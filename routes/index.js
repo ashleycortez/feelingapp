@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 // our db models
 var Person = require("../models/person.js");
-var Course = require("../models/course.js");
+//var Course = require("../models/course.js");
 
 /**
  * GET '/'
@@ -15,7 +15,7 @@ var Course = require("../models/course.js");
 router.get('/', function(req, res) {
 
   var jsonData = {
-  	'name': 'itp-directory',
+  	'name': 'feelingapp',
   	'api-status':'OK'
   }
 
@@ -42,11 +42,17 @@ router.post('/api/create', function(req,res){
   console.log(req.body);
 
   var personObj = {
-    name: req.body.name,
-    itpYear: req.body.itpYear,
-    interests: req.body.interests.split(','),
-    link: req.body.link,
-    imageUrl: req.body.imageUrl  
+    date: req.body.date,
+    location: req.body.location,
+    want: req.body.want,
+    strengthofwant: req.body.strengthofwant,
+    wantcolor: req.body.wantcolor,
+    need: req.body.need,
+    strengthofneed: req.body.strengthofneed,
+    needcolor: req.body.needcolor,
+    have: req.body.have,
+    strengthofhave: req.body.strengthofhave,
+    havecolor: req.body.havecolor 
   }
 
   var person = new Person(personObj);

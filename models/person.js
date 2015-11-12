@@ -1,16 +1,21 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-// See http://mongoosejs.com/docs/schematypes.html
+//See http://mongoosejs.com/docs/schematypes.html
 
-var personSchema = new Schema({
-	name: String,
-	itpYear: Number,
-	interests: [String],
-	link: String,
-	imageUrl: String,
-	dateAdded : { type: Date, default: Date.now }
+var moodSchema = new Schema({
+	date: String,
+	location: Number,
+	want: String,
+	strengthofwant: Number,
+	wantcolor: String,
+	need: String,
+	strengthofneed: Number,
+	needcolor: String,
+	have: String,
+	strengthofhave: Number,
+	havecolor: String,
+	dateAdded : { type: Date, default: Date.now },
 })
 
-// export 'Person' model so we can interact with it in other files
-module.exports = mongoose.model('Person',personSchema);
+module.exports = mongoose.model('Mood',moodSchema);
