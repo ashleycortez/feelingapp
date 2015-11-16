@@ -20,7 +20,8 @@ router.get('/', function(req, res) {
   }
 
   // respond with json data
-  res.json(jsonData)
+  res.render('add.html')
+  //res.json(jsonData)
 });
 
 router.get('/add-person', function(req,res){

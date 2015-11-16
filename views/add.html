@@ -14,7 +14,7 @@
 
     <!-- Custom CSS inside CSS folder -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel=""
+    
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,8 +29,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <h1>NEED MACHINE</h1>
+      <div class="span6 center">
+        <h1>NEED MACHINE...</h1>
         <form method="post" action="/api/create">
           <div class="background1">
             <div class="form-group">
@@ -52,6 +52,7 @@
                  <input type="text" class="form-control" id="strengthofwant" placeholder="1-10" name="strengthofwant">
               </div>
               <div class="form-group">
+                <p id="colorresponse">Feeling Colors</p>
                 <p>Feelings sometimes take on colors, sad is sometimes associated with Blue, Anger with Red, Jealousy with Green. Think about this want, how does it look to you?</p>
                 <p>Click here and Show Me How This Looks: <input class="color" id="wantcolor" value="66ff00" name="wantcolor"></p>
               </div>
@@ -66,6 +67,7 @@
               <input type="text" class="form-control" id="strengthofneed" placeholder="1-10" name="strengthofneed"> 
             </div>
             <div class="form-group">
+              <p id="colorresponse">Feeling Colors</p>
               <p>Click Here and Show Me How This Looks: <input class="color" id="needcolor" value="66ff00" name="needcolor"></p>
             </div>
           </div>
@@ -78,7 +80,9 @@
               <label for="strengthofhave">Rate How Strong this Connection Feels to You</label>
               <input type="text" class="form-control" id="strengthofhave" placeholder="1-10" name="strengthofhave"> 
             </div>
-            <div><p>Click Here and Show Me How This Looks: <input class="color" id="havecolor" value="66ff00" name="havecolor"></p>
+            <div>
+              <p id="colorresponse">Feeling Colors</p>
+              <p>Click Here and Show Me How This Looks: <input class="color" id="havecolor" value="66ff00" name="havecolor"></p>
             </div>
           </div>                  
             <button type="submit" class="btn btn-default">Submit</button>
@@ -91,7 +95,10 @@
     <script type="text/javascript" src="js/jscolor.js"></script>
     <!-- JQuery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+      <!-- JQuery validate -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="js/main.js"></script>
+
 </html>

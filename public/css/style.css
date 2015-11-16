@@ -11,3 +11,21 @@
 	background-color: #54C776;
 	padding: 50px;
 }
+
+#colorresponse{
+	font-weight: bold;
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-md-3 {
+	background-color: green;
+	margin: 0px;
+	text-align: center;
+	margin: 20px;
+	vertical-align: center;
+}
