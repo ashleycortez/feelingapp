@@ -20,7 +20,7 @@ router.get('/', function(req, res) {
   }
 
   // respond with json data
-  res.render('add.html')
+  res.render('directory.html')
   //res.json(jsonData)
 });
 
@@ -36,6 +36,11 @@ router.get('/directory', function(req,res){
 
 })
 
+router.get('/thanks', function(req,res){
+
+  res.render('thanks.html')
+
+})
 
 router.post('/api/create', function(req,res){
 
@@ -72,8 +77,8 @@ router.post('/api/create', function(req,res){
       person: data
     }
 
-    return res.json(jsonData);
-
+    //return res.json(jsonData);
+    return res.redirect('/thanks');  
   })
 
 })
@@ -96,7 +101,8 @@ router.get('/api/get', function(req,res){
         people: data
       }
 
-      return res.json(jsonData);
+       return res.json(jsonData);
+
 
   })
 
