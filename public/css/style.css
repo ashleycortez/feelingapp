@@ -12,20 +12,47 @@
 	padding: 50px;
 }
 
-#colorresponse{
-	font-weight: bold;
+#want{
+	background:yellow;
 }
 
-.center {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+#need{
+	background: blue;
 }
 
-.col-md-3 {
-	background-color: green;
+
+#have {
+	background: green;
+}
+
+
+#people-holder{
+	font-family: 'Oswald', sans-serif;
+	color: white;
 	margin: 0px;
+	padding: 0px;
+	box-shadow: 0 0 10px #000000;
+	background: #666666;
+}
+
+h1{
+	padding: 20px;
+	margin: 0px;
+}
+
+#directory {
 	text-align: center;
-	margin: 20px;
-	vertical-align: center;
+}
+
+body {
+	background-color: #222222;
+}
+
+#front{
+	padding-bottom: 80px;
+
+}
+
+.col-md-3{
+	margin-top: 15px;
 }
