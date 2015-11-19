@@ -4,25 +4,29 @@
 
 .background1{
 	background-color: #5893D6;
-	padding: 50px;
+	padding: 20px;
+	font-family: 'Oswald', sans-serif;
+	background: #222222;
 }
 
 .background2{
 	background-color: #54C776;
-	padding: 50px;
+	padding: 20px;
+	font-family: 'Oswald', sans-serif;
+	background: #222222;
 }
 
 #want{
-	background:yellow;
+	/*background:yellow;*/
 }
 
 #need{
-	background: blue;
+	/*background: blue;*/
 }
 
 
 #have {
-	background: green;
+	/*background: green;*/
 }
 
 
@@ -33,6 +37,7 @@
 	padding: 0px;
 	box-shadow: 0 0 10px #000000;
 	background: #666666;
+	text-shadow: 0px 1px 1px #333333;
 }
 
 h1{
@@ -53,6 +58,32 @@ body {
 
 }
 
+#input {
+	font-family: 'Oswald', sans-serif;
+	background: #222222;
+	color: #555555;
+	font-size: 1em;
+}
+
 .col-md-3{
 	margin-top: 15px;
 }
+
+#title {
+	font-size: 5em;
+	padding-top: 50px;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 1px #666666;
+
+}
+
+#subtitle {
+	font-size: 1.5em;
+}
+
+#submitbutton {
+	padding: 10px;
+	width: 100%;
+}
+
+

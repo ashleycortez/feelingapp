@@ -21,7 +21,7 @@ function renderFeels(){
 					'<h1 style="background-color:#'+people[i].havecolor+'"id="have">'+people[i].have+'</h1>'+
 				'</div>';
 			
-				jQuery("#people-holder").append(htmlToAdd);
+				jQuery("#people-holder").prepend(htmlToAdd);
 			}
 
 
